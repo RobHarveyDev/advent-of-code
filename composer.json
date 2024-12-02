@@ -1,0 +1,23 @@
+{
+    "name": "robharveydev/advent-of-code",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "RobHarveyDev\\AdventOfCode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RobHarveyDev\\AdventOfCode\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robert Harvey"
+        }
+    ],
+    "require-dev": {
+        "php": "8.4",
+        "phpunit/phpunit": "^11.4"
+    }
+}
