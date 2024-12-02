@@ -11,6 +11,17 @@ foreach ($reports as $reportLine) {
 
     if (isSafe($reportArray)) {
         $totalSafe++;
+        continue;
+    }
+
+    for ($i = 0; $i < count($reportArray); $i++) {
+        $copy = array_values($reportArray);
+        unset($copy[$i]);
+
+        if (isSafe(array_values($copy))) {
+            $totalSafe++;
+            break;
+        }
     }
 }
 
